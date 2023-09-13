@@ -245,11 +245,6 @@ function registrationButtonClicked() {
     const username = document.getElementById("register_username_input").value;
     const password = document.getElementById("register_password_input").value;
     const profileImage = document.getElementById("profile-image").files[0];
-    console.log(profileImage)
-    console.log(name, username, password);
-    if(!username || !password || !name) {
-        return;
-    }
     const formData = new FormData();
     formData.append("name", name);
     formData.append("username", username);
@@ -283,11 +278,6 @@ function loginBtnClicked() {
     loader(true);
     const username = document.getElementById("username_input").value;
     const password = document.getElementById("password_input").value;
-    
-    if (!username || !password) {
-        return;
-    }
-    
     const params = {
         "username": username,
         "password": password

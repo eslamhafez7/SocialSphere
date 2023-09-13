@@ -266,6 +266,7 @@ img[alt="post image"] {
     z-index: 15;
     cursor: pointer;
     transition: 0.3s;
+    visibility: hidden;
 }
 .goback_btn:hover i {
     animation: btn 0.3s linear infinite;
